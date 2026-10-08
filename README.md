@@ -36,7 +36,7 @@ Pushing to `main` runs `.github/workflows/pages.yml`, which uploads the repo roo
 
 ## GitHub setup
 
-1. Repo Settings > Pages > Build and deployment > Source: **GitHub Actions**.
+1. Repo Settings > Pages > Build and deployment > Source: **the main branch (root folder)**.
 2. Settings > Pages > Custom domain: `laxmitechno.in`, then Save.
 3. After the DNS check passes and the certificate is issued, tick **Enforce HTTPS**.
 
