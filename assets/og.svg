@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#121B3F"/>
+  <g fill="none" stroke="#FFB000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(900 315)">
+    <path d="M0 -240C80 -170 190 -120 220 0C190 120 80 170 0 240C-80 170 -190 120 -220 0C-190 -120 -80 -170 0 -240Z"/>
+    <path d="M0 -150C50 -105 120 -75 140 0C120 75 50 105 0 150C-50 105 -120 75 -140 0C-120 -75 -50 -105 0 -150Z"/>
+    <path d="M0 -70C30 -45 65 -30 70 0C65 30 30 45 0 70C-30 45 -65 30 -70 0C-65 -30 -30 -45 0 -70Z"/>
+  </g>
+  <g fill="#FFB000"><circle cx="900" cy="315" r="9"/><circle cx="900" cy="45" r="7"/><circle cx="900" cy="585" r="7"/><circle cx="650" cy="315" r="7"/><circle cx="1150" cy="315" r="7"/></g>
+  <text x="80" y="300" fill="#FFFFFF" font-family="'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif" font-size="88" font-weight="700" letter-spacing="-2">Laxmi Techno</text>
+  <text x="80" y="370" fill="#C5CCE6" font-family="'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif" font-size="38">AI and software development</text>
+  <rect x="80" y="410" width="120" height="6" rx="3" fill="#FFB000"/>
+  <text x="80" y="560" fill="#FFB000" font-family="'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif" font-size="28">laxmitechno.in</text>
+</svg>

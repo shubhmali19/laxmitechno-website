@@ -1,0 +1,51 @@
+/* Home page styles. Everything is scoped under .home-* to avoid clashing with base.css. */
+
+/* ---- hero ---- */
+.home-hero{padding-block:clamp(2.5rem,6vw,5rem) clamp(3rem,7vw,6rem);overflow:hidden}
+.home-hero .wrap{display:grid;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:56rem){.home-hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}}
+.home-hero h1{font-size:clamp(2.4rem,1.5rem + 4vw,4.6rem);font-weight:800;color:#fff;max-width:15ch}
+.home-hero .lede{max-width:46ch;margin-bottom:2rem}
+.home-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.home-stage{position:relative;justify-self:center;width:min(100%,34rem);cursor:crosshair}
+.kolam{width:100%;height:auto;aspect-ratio:1;overflow:visible}
+.kolam-lines path{fill:none;stroke:var(--marigold);stroke-width:2.6;stroke-linecap:round;opacity:0}
+.kolam-lines.is-drawn path{opacity:1}
+.kolam-lines.is-drawing path{stroke-dasharray:1;stroke-dashoffset:1;animation:home-draw 1.1s cubic-bezier(.5,0,.2,1) var(--d,0s) forwards}
+@keyframes home-draw{0%{opacity:1;stroke-dashoffset:1}100%{opacity:1;stroke-dashoffset:0}}
+.kolam-dot{fill:#8F9BCB;fill:color-mix(in srgb,#FFB000 calc(var(--w)*100%),#8F9BCB);--w:0;transform-box:fill-box;transform-origin:center;transform:scale(calc(1 + var(--w)*1.6));transition:transform .2s}
+.home-redraw{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;padding:.55rem .9rem;font:500 var(--step--1)/1 var(--f-body);color:#EEF1FA;background:transparent;border:1px solid #5C6896;border-radius:var(--r);cursor:pointer}
+.home-redraw:hover{border-color:var(--marigold);color:#fff}
+.home-stage-foot{display:flex;justify-content:center}
+
+/* ---- capabilities: ruled list, not cards ---- */
+.home-cap{display:grid;gap:2rem 4rem}
+@media(min-width:56rem){.home-cap{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}.home-cap-head{position:sticky;top:6rem;align-self:start}}
+.home-cap-head p{color:var(--ink-soft)}
+.home-cap-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--mist)}
+.home-cap-list li{display:grid;gap:.25rem 2rem;padding-block:1.4rem;border-bottom:1px solid var(--mist)}
+@media(min-width:40rem){.home-cap-list li{grid-template-columns:minmax(0,11rem) minmax(0,1fr)}}
+.home-cap-list h3{margin:0;font-size:var(--step-1)}
+.home-cap-list p{margin:0;color:var(--ink-soft)}
+.home-more{display:inline-block;margin-top:.5rem;font-weight:600}
+
+/* ---- how we work: a real sequence on a dotted thread ---- */
+.home-process{background:var(--paper);border-block:1px solid var(--mist)}
+.home-steps{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;gap:2rem;counter-reset:step}
+@media(min-width:48rem){.home-steps{grid-template-columns:repeat(4,1fr);gap:1.5rem}}
+.home-steps li{position:relative;padding-top:2.6rem;counter-increment:step}
+.home-steps li::before{content:counter(step);position:absolute;top:0;left:0;width:2rem;height:2rem;border-radius:50%;background:var(--indigo);color:var(--marigold);display:grid;place-items:center;font:700 .95rem/1 var(--f-display)}
+.home-steps li::after{content:"";position:absolute;top:1rem;left:2.4rem;right:.4rem;border-top:2px dotted var(--mist)}
+.home-steps li:last-child::after{display:none}
+@media(max-width:47.99rem){
+  .home-steps li{padding:0 0 0 3rem}
+  .home-steps li::after{top:2.4rem;bottom:-1.6rem;left:1rem;right:auto;border-top:0;border-left:2px dotted var(--mist)}
+}
+.home-steps h3{margin-bottom:.35rem}
+.home-steps p{margin:0;color:var(--ink-soft);font-size:var(--step--1);font-size:max(.95rem,var(--step--1))}
+
+/* ---- closing band ---- */
+.home-close .wrap{display:grid;gap:1.5rem 3rem;align-items:center}
+@media(min-width:56rem){.home-close .wrap{grid-template-columns:minmax(0,1fr) auto}}
+.home-close h2{margin:0;max-width:20ch;color:#fff;font-size:var(--step-3)}
+.home-close p{margin:.75rem 0 0}

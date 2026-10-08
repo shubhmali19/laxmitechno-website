@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Laxmi Techno | Start a project</title>
+<meta name="description" content="Tell Laxmi Techno what you want to build. Fill in the short form and your email app opens with the message ready to send to hello@laxmitechno.in.">
+<link rel="canonical" href="https://laxmitechno.in/contact.html">
+<meta property="og:title" content="Contact Laxmi Techno"><meta property="og:description" content="Tell us what you want to build. We reply by email."><meta property="og:url" content="https://laxmitechno.in/contact.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=Noto+Sans+Devanagari:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages.css">
+<meta name="theme-color" content="#121B3F">
+<meta property="og:site_name" content="Laxmi Techno"><meta property="og:image" content="https://laxmitechno.in/assets/og.svg">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/">Laxmi Techno <span class="deva" lang="hi" aria-hidden="true">लक्ष्मी</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="/services.html">Services</a><a href="/about.html">About</a>
+    <a class="btn" href="/contact.html" aria-current="page">Start a project</a>
+  </nav>
+</div></header>
+<main id="main">
+
+<section class="page-hero dark">
+  <div class="wrap">
+    <div>
+      <h1>Tell us what you want to build.</h1>
+      <p class="lede">A few lines is enough. We will read it and reply by email.</p>
+    </div>
+    <svg class="kolam" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+      <path class="line" d="M100 8C125 40 160 75 192 100C160 125 125 160 100 192C75 160 40 125 8 100C40 75 75 40 100 8Z"/>
+      <g class="dot"><circle cx="100" cy="20" r="3.5"/><circle cx="60" cy="60" r="3.5"/><circle cx="100" cy="60" r="3.5"/><circle cx="140" cy="60" r="3.5"/><circle cx="20" cy="100" r="3.5"/><circle cx="60" cy="100" r="3.5"/><circle cx="100" cy="100" r="3.5"/><circle cx="140" cy="100" r="3.5"/><circle cx="180" cy="100" r="3.5"/><circle cx="60" cy="140" r="3.5"/><circle cx="100" cy="140" r="3.5"/><circle cx="140" cy="140" r="3.5"/><circle cx="100" cy="180" r="3.5"/></g>
+    </svg>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div class="contact-side">
+      <h2>Prefer to write directly?</h2>
+      <p><a class="mail" href="mailto:hello@laxmitechno.in">hello@laxmitechno.in</a></p>
+      <ul>
+        <li>This site has no server, so the form opens your email app with the message filled in. You press send.</li>
+        <li>Nothing is stored or sent until you send that email.</li>
+        <li>Budget is optional context. It helps us suggest a sensible first step.</li>
+      </ul>
+    </div>
+
+    <div>
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+          <p class="error" id="name-err"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-err">
+          <p class="error" id="email-err"></p>
+        </div>
+        <div class="field">
+          <label for="company">Company <span class="opt">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="build">What do you want to build?</label>
+          <input id="build" name="build" type="text" required aria-describedby="build-hint build-err">
+          <p class="hint" id="build-hint">For example: a support assistant, a document-reading tool, a forecasting dashboard.</p>
+          <p class="error" id="build-err"></p>
+        </div>
+        <div class="field">
+          <label for="budget">Rough budget</label>
+          <select id="budget" name="budget">
+            <option>Not sure yet</option>
+            <option>Under ₹5 lakh</option>
+            <option>₹5–25 lakh</option>
+            <option>₹25 lakh+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required aria-describedby="message-hint message-err"></textarea>
+          <p class="hint" id="message-hint">Who will use it, what problem it solves, and any timeline you have in mind.</p>
+          <p class="error" id="message-err"></p>
+        </div>
+        <div class="form-actions">
+          <button class="btn" type="submit">Prepare email</button>
+          <p class="small">Opens your email app with this message ready to send.</p>
+        </div>
+        <div class="status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <div><strong style="color:#fff">Laxmi Techno</strong><p>AI and software development, built in India.</p><p>&copy; <span id="yr">2026</span> Laxmi Techno</p></div>
+  <ul><li><a href="/services.html">Services</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul>
+  <ul><li><a href="mailto:hello@laxmitechno.in">hello@laxmitechno.in</a></li></ul>
+</div></footer>
+<script src="/js/contact.js"></script>
+</body>
+</html>
