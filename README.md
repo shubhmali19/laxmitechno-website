@@ -15,7 +15,6 @@ assets/             favicon.svg, og.svg, shell snippet
 CNAME               custom domain (laxmitechno.in)
 .nojekyll           tells GitHub Pages to skip Jekyll
 robots.txt, sitemap.xml
-.github/workflows/pages.yml   deployment
 ```
 
 Paths are root-relative (`/css/base.css`), so the site must be served from the domain root.
@@ -32,7 +31,6 @@ Open http://localhost:8000. Do not open files with `file://`, since root-relativ
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/pages.yml`, which uploads the repo root as a Pages artifact and deploys it. You can also run it manually from the Actions tab (workflow_dispatch).
 
 ## GitHub setup
 
@@ -58,4 +56,4 @@ DNS changes can take from a few minutes up to 24-48 hours to propagate. GitHub w
 
 ## Email
 
-The site lists `hello@laxmitechno.in`. That mailbox must exist in GoDaddy Email & Office (or be set up as an alias/forward), otherwise mail sent from the contact links will bounce.
+The site lists `shubh@laxmitechno.in`. That mailbox must exist in GoDaddy Email & Office (or be set up as an alias/forward), otherwise mail sent from the contact links will bounce.

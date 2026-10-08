@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var TO = 'hello@laxmitechno.in';
+  var TO = 'shubh@laxmitechno.in';
   var form = document.getElementById('contact-form');
   if (!form) return;
   var status = document.getElementById('form-status');
